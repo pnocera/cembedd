@@ -25,3 +25,9 @@ cargo add chrono --features serde
 cargo add tokio --features full
 
 cargo add pretty_env_logger
+
+## build and run
+
+cargo build --release
+
+./target/release/cembedd
