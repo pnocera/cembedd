@@ -1,0 +1,21 @@
+[package]
+name = "cembedd"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+candle = { git = "https://github.com/huggingface/candle.git", version = "0.2.2", package = "candle-core", features = ["cuda"] }
+candle_nn = { git = "https://github.com/huggingface/candle.git", version = "0.2.2", package = "candle-nn", features = ["cuda"] }
+chrono = { version = "0.4.30", features = ["serde"] }
+false = "0.0.0"
+hf_hub = { version = "0.3.1", package = "hf-hub", features = ["tokio"] }
+lazy_static = "1.4.0"
+pretty_env_logger = "0.5.0"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+tokenizers = { version = "0.14.0", features = ["hf-hub"] }
+tokio = { version = "1.32.0", features = ["full"] }
+warp = "0.3.5"

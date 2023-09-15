@@ -1,0 +1,9 @@
+GET http://localhost:8085/api/healthz
+
+###
+POST http://localhost:8085/api/embedding
+Content-Type: application/json
+
+{
+    "sentences": ["I love you", "Neither do I"]
+}
