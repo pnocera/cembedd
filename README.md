@@ -31,3 +31,5 @@ cargo add pretty_env_logger
 cargo build --release
 
 ./target/release/cembedd
+
+see test.http for example requests
